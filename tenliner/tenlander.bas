@@ -1,9 +1,10 @@
-1V=53248:fOZ=0TO18:rEJ:pO832+Z,J:nEZ:pO2040,13:G=0.1:VV=0:HV=0
-2pOV+21,3:pOV+39,7:pOV+40,1:X=150:Y=80:F=90:dA62,,,127,,,85,,,127,,,127,,,42,,,85
-3?"{clear}{down*10}{white}":D$(0)="{sh asterisk}":D$(1)="{cm i}":D$(2)="K{up}{left}U":D$(3)="I{down}{left}J":fOI=1TO40:?D$(rN(1)*4);:nE
-4J=255-pE(56320):U=(JaN2)/2-(JaN1):C=(JaN8)/8-(JaN4)/4:IFU<>0tHF=F-(1+(F<=0)):POKE54296,15:POKE54296,0
-5Y=Y+VV:VV=VV+G+U*0.5*(1+(F<=0)):X=X+HV:HV=HV+C*0.5:IFX<0ANDPEEK(53264)=1tHX=254:POKE53264,0
-6IFX>254tHpO53264,1:X=X-255
-7pOV,X:pOV+1,Y::sx=int((x-24+8)/8):sy=int((y-50+5)/8):LL=pE(1024+SX+SY*40):IFLL=98aNVV<1.5tH?"you win":fOI=0TO1000:nEI:gO2
-8IFLL<>32tH?"crashed":pO2040,10:eN
-9pO781,0:sY59903:?"{home}";CHR$(30+2*(VV>1.5));"vel ";INT(VV*100);CHR$(30+2*(F<5));" fuel ";F;CHR$(30+2*(LL<>98));"sonar{white}":gO4
+0v=53248:fOz=0to18:rEj:pO832+z,j:nEz:pO2040,13:g=0.1
+1pOv+21,3:pOv+39,7:pOv+40,1::vv=0:hv=0:x=150:y=80:f=10:pO53264,0:?"{clear}{down*9}{white}":
+2d$(0)="{sh asterisk}":d$(1)="{cm i}":d$(2)="K{up}{left}U":d$(3)="I{down}{left}J":fOi=1to40:?d$(rN(1)*4);:nE
+3j=255-pE(56320):u=(jaN2)/2-(jaN1):c=(jaN8)/8-(jaN4)/4:ifutHf=f+(f>0):pO54296,15
+4pO54296,0:y=y+vv:vv=vv+g+u*0.5*(1+(f<=0)):x=x+hv:hv=hv+c*0.5
+5b=-(x>255):pO53264,b:pOv,(x-255*b)*(1+(x<0))+(255+x)*(1+(x=>0))
+6pOv+1,y:sx=int((x-16)/8):sy=int((y-45)/8):ll=pE(1024+sx+sy*40)
+7ifll=98aNvv<1.5tH?"you win":fOi=0to1000:nEi:gO1
+8pO781,0:sY59903:?"{home}";cH(30+2*(vv>1.5));"v:";int(vv*100);cH(30+2*(f<5));"f:";f
+9on-(ll=32)gO3:?"crashed":pO2040,10:eN:dA62,,,127,,,85,,,127,,,127,,,42,,,85
